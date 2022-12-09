@@ -127,7 +127,7 @@ function calculate(topF,totalToppingsF,totalF){
 
 })
    $("#extra-cheese").on("click ",function(){
-let isChecked = $('#extra-cheese')[0].checked
+var isChecked = $('#extra-cheese')[0].checked
 console.log(isChecked)
 if(!isChecked){
     console.log("hi")
@@ -172,23 +172,11 @@ if(value)
 
  }
 
-
-
-  // total+=top
- // totalToppings+= toppings[12].cost
- // calculate(top,totalToppings,total)
+})
 
 })
 
-
-
-})
-
-    
-
-
-
- $(document).ready(function(){
+     $(document).ready(function(){
     $(".toppings-genre").on("click ",function(){
  $ (".toppings-body-non").toggle(1000);
   $ (".toppings-body-veg").toggle(1000);
@@ -264,5 +252,5 @@ topping:'grilled-chicken-rasher',cost:7
     ];
 
  function addtocart(){
-    alert("your orde has tiked by", $("#grand-cost").show() );
+    alert("Your order is ticked!\nIt wil take an hour to prepare it!" );
  }
