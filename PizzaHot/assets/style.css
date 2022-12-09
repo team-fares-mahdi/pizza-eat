@@ -9,10 +9,7 @@ body {
     background: #FFFCF0;
     background-image: url(images/background.png);
     background-attachment: fixed;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
 }
 
 header {
@@ -26,7 +23,6 @@ header {
 
 #logo-img {
     width: 45px;
-    transform: translateY(5px)
 }
 
 
@@ -174,10 +170,6 @@ header {
     transition: .5s;
 }
 
-.cheese input:checked ~ .checkmark:after {
-    display: block;
-    animation: check .3s ease-in forwards;
-}
 
 @keyframes check {
     from { transform: rotate(15deg) }
